@@ -49,7 +49,17 @@ require("lazy").setup({
 
 {"joshdick/onedark.vim"},
 {'akinsho/toggleterm.nvim', version = "*", config = true},
-{"s1n7ax/nvim-window-picker"}
+
+{'akinsho/bufferline.nvim', version = "*", dependencies = 'nvim-tree/nvim-web-devicons'},
+{
+    'windwp/nvim-autopairs',
+    event = "InsertEnter",
+    config = true
+    -- use opts = {} for passing setup options
+    -- this is equalent to setup({}) function
+},
+{"VonHeikemen/fine-cmdline.nvim", dependencies = 'MunifTanjim/nui.nvim'}
 }
+
 
 )
